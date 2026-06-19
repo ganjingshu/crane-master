@@ -1,0 +1,5 @@
+speed 2000
+device STM32F407IGHx
+r
+loadfile ./build/Jlink_test.hex
+q

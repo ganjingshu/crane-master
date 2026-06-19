@@ -1,0 +1,28 @@
+
+
+GraphedExpression="((motor_lb)->measure).real_current", DisplayFormat=DISPLAY_FORMAT_DEC, Color=#e56a6f, Show=0
+GraphedExpression="((motor_lb)->measure).speed_aps", Color=#35792b
+GraphedExpression="((motor_lf)->measure).real_current", DisplayFormat=DISPLAY_FORMAT_DEC, Color=#769dda, Show=0
+GraphedExpression="((motor_lf)->measure).speed_aps", Color=#b14f0d
+OpenDocument="chassis.c", FilePath="/home/tao/hy_-mecanum-standard_2026/application/chassis/chassis.c", Line=0
+OpenDocument="gimbal.c", FilePath="/home/tao/hy_-mecanum-standard_2026/application/gimbal/gimbal.c", Line=5
+OpenDocument="robot.c", FilePath="/home/tao/hy_-mecanum-standard_2026/application/robot.c", Line=22
+OpenDocument="main.c", FilePath="/home/tao/hy_-mecanum-standard_2026/Src/main.c", Line=58
+OpenToolbar="Debug", Floating=0, x=0, y=0
+OpenWindow="Disassembly", DockArea=RIGHT, x=0, y=0, w=775, h=101, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+OpenWindow="Global Data", DockArea=BOTTOM, x=1, y=0, w=151, h=422, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+OpenWindow="Watched Data 1", DockArea=BOTTOM, x=2, y=0, w=610, h=422, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+OpenWindow="Data Sampling", DockArea=BOTTOM, x=0, y=0, w=482, h=422, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0, VisibleTab=0, UniformSampleSpacing=0
+OpenWindow="Timeline", DockArea=RIGHT, x=0, y=1, w=775, h=531, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=1, DataPaneShown=1, PowerPaneShown=0, CodePaneShown=0, PinCursor="Cursor Movable", TimePerDiv="2 s / Div", TimeStampFormat="Time", DataGraphDrawAsPoints=0, DataGraphLegendShown=1, DataGraphUniformSampleSpacing=0, DataGraphLegendPosition="439;0", DataGraphShowNamesAtCursor=0, PowerGraphDrawAsPoints=0, PowerGraphLegendShown=0, PowerGraphAvgFilterTime=Off, PowerGraphAvgFilterLen=Off, PowerGraphUniformSampleSpacing=0, PowerGraphLegendPosition="590;0", CodeGraphLegendShown=0, CodeGraphLegendPosition="564;0"
+OpenWindow="Console", DockArea=BOTTOM, x=3, y=0, w=589, h=422, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+SmartViewPlugin="", Page="", Toolbar="Hidden", Window="SmartView 1"
+TableHeader="Global Data", SortCol="Name", SortOrder="DESCENDING", VisibleCols=["Name";"Value";"Location";"Size";"Type";"Scope"], ColWidths=[158;100;100;100;100;100]
+TableHeader="Data Sampling Table", SortCol="None", SortOrder="ASCENDING", VisibleCols=["Index";"Time";" ((motor_lb)->measure).real_current";" ((motor_lb)->measure).speed_aps";" ((motor_lf)->measure).real_current";" ((motor_lf)->measure).speed_aps"], ColWidths=[100;100;100;100;100;100]
+TableHeader="Data Sampling Setup", SortCol="Expression", SortOrder="DESCENDING", VisibleCols=["Expression";"Type";"Value";"Min";"Max";"Average";"# Changes";"Min. Change";"Max. Change"], ColWidths=[280;100;100;100;100;100;100;100;100]
+TableHeader="Power Sampling", SortCol="None", SortOrder="ASCENDING", VisibleCols=["Index";"Time";"Ch 0"], ColWidths=[100;100;100]
+TableHeader="Watched Data 1", SortCol="Expression", SortOrder="ASCENDING", VisibleCols=["Expression";"Value";"Location";"Refresh"], ColWidths=[199;210;100;100]
+TableHeader="RegisterSelectionDialog", SortCol="None", SortOrder="ASCENDING", VisibleCols=[], ColWidths=[]
+TableHeader="TargetExceptionDialog", SortCol="Name", SortOrder="ASCENDING", VisibleCols=["Name";"Value";"Address";"Description"], ColWidths=[200;100;100;359]
+WatchedExpression="pitch_motor", RefreshRate=5, Window=Watched Data 1
+WatchedExpression="motor_lb", RefreshRate=5, Window=Watched Data 1
+WatchedExpression="motor_lf", RefreshRate=5, Window=Watched Data 1

@@ -1,0 +1,3 @@
+C:/Users/ganjingshu/Desktop/frame1/CMakeFiles/basic_framework.elf.dir
+C:/Users/ganjingshu/Desktop/frame1/CMakeFiles/edit_cache.dir
+C:/Users/ganjingshu/Desktop/frame1/CMakeFiles/rebuild_cache.dir

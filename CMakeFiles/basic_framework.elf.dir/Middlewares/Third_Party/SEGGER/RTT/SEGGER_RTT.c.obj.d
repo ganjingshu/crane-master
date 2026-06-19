@@ -1,0 +1,26 @@
+CMakeFiles/basic_framework.elf.dir/Middlewares/Third_Party/SEGGER/RTT/SEGGER_RTT.c.obj: \
+ C:\Users\ganjingshu\Desktop\frame1\Middlewares\Third_Party\SEGGER\RTT\SEGGER_RTT.c \
+ C:\Users\ganjingshu\Desktop\frame1\Middlewares\Third_Party\SEGGER\RTT\SEGGER_RTT.h \
+ C:/Users/ganjingshu/Desktop/frame1/Middlewares/Third_Party/SEGGER/Config/SEGGER_RTT_Conf.h \
+ D:/msys2/mingw64/arm-none-eabi/include/stdlib.h \
+ D:/msys2/mingw64/arm-none-eabi/include/machine/ieeefp.h \
+ D:/msys2/mingw64/arm-none-eabi/include/_ansi.h \
+ D:/msys2/mingw64/arm-none-eabi/include/newlib.h \
+ D:/msys2/mingw64/arm-none-eabi/include/_newlib_version.h \
+ D:/msys2/mingw64/arm-none-eabi/include/sys/config.h \
+ D:/msys2/mingw64/arm-none-eabi/include/sys/features.h \
+ D:/msys2/mingw64/lib/gcc/arm-none-eabi/13.3.0/include/stddef.h \
+ D:/msys2/mingw64/arm-none-eabi/include/sys/reent.h \
+ D:/msys2/mingw64/arm-none-eabi/include/_ansi.h \
+ D:/msys2/mingw64/arm-none-eabi/include/sys/cdefs.h \
+ D:/msys2/mingw64/arm-none-eabi/include/machine/_default_types.h \
+ D:/msys2/mingw64/arm-none-eabi/include/sys/_types.h \
+ D:/msys2/mingw64/arm-none-eabi/include/machine/_types.h \
+ D:/msys2/mingw64/arm-none-eabi/include/sys/lock.h \
+ D:/msys2/mingw64/arm-none-eabi/include/machine/stdlib.h \
+ D:/msys2/mingw64/arm-none-eabi/include/alloca.h \
+ D:/msys2/mingw64/lib/gcc/arm-none-eabi/13.3.0/include/stdarg.h \
+ D:/msys2/mingw64/arm-none-eabi/include/string.h \
+ D:/msys2/mingw64/arm-none-eabi/include/sys/_locale.h \
+ D:/msys2/mingw64/arm-none-eabi/include/strings.h \
+ D:/msys2/mingw64/arm-none-eabi/include/sys/string.h

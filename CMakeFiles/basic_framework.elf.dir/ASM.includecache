@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/ganjingshu/Desktop/frame1/Middlewares/Third_Party/SEGGER/Config/SEGGER_RTT_Conf.h
+intrinsics.h
+-
+machine.h
+-
+
+C:/Users/ganjingshu/Desktop/frame1/Middlewares/Third_Party/SEGGER/RTT/SEGGER_RTT.h
+../Config/SEGGER_RTT_Conf.h
+C:/Users/ganjingshu/Desktop/frame1/Middlewares/Third_Party/SEGGER/Config/SEGGER_RTT_Conf.h
+stdlib.h
+-
+stdarg.h
+-
+
+C:/Users/ganjingshu/Desktop/frame1/Middlewares/Third_Party/SEGGER/RTT/SEGGER_RTT_ASM_ARMv7M.s
+SEGGER_RTT.h
+C:/Users/ganjingshu/Desktop/frame1/Middlewares/Third_Party/SEGGER/RTT/SEGGER_RTT.h
+
+C:/Users/ganjingshu/Desktop/frame1/startup_stm32f407xx.s
+

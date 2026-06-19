@@ -1,0 +1,34 @@
+CMakeFiles/basic_framework.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj: \
+ C:\Users\ganjingshu\Desktop\frame1\Middlewares\Third_Party\FreeRTOS\Source\stream_buffer.c \
+ D:/msys2/mingw64/lib/gcc/arm-none-eabi/13.3.0/include/stdint.h \
+ D:/msys2/mingw64/arm-none-eabi/include/stdint.h \
+ D:/msys2/mingw64/arm-none-eabi/include/machine/_default_types.h \
+ D:/msys2/mingw64/arm-none-eabi/include/sys/features.h \
+ D:/msys2/mingw64/arm-none-eabi/include/_newlib_version.h \
+ D:/msys2/mingw64/arm-none-eabi/include/sys/_intsup.h \
+ D:/msys2/mingw64/arm-none-eabi/include/sys/_stdint.h \
+ D:/msys2/mingw64/arm-none-eabi/include/string.h \
+ D:/msys2/mingw64/arm-none-eabi/include/_ansi.h \
+ D:/msys2/mingw64/arm-none-eabi/include/newlib.h \
+ D:/msys2/mingw64/arm-none-eabi/include/sys/config.h \
+ D:/msys2/mingw64/arm-none-eabi/include/machine/ieeefp.h \
+ D:/msys2/mingw64/arm-none-eabi/include/sys/reent.h \
+ D:/msys2/mingw64/arm-none-eabi/include/_ansi.h \
+ D:/msys2/mingw64/lib/gcc/arm-none-eabi/13.3.0/include/stddef.h \
+ D:/msys2/mingw64/arm-none-eabi/include/sys/cdefs.h \
+ D:/msys2/mingw64/arm-none-eabi/include/sys/_types.h \
+ D:/msys2/mingw64/arm-none-eabi/include/machine/_types.h \
+ D:/msys2/mingw64/arm-none-eabi/include/sys/lock.h \
+ D:/msys2/mingw64/arm-none-eabi/include/sys/_locale.h \
+ D:/msys2/mingw64/arm-none-eabi/include/strings.h \
+ D:/msys2/mingw64/arm-none-eabi/include/sys/string.h \
+ C:\Users\ganjingshu\Desktop\frame1\Middlewares\Third_Party\FreeRTOS\Source\include/FreeRTOS.h \
+ C:\Users\ganjingshu\Desktop\frame1\Inc/FreeRTOSConfig.h \
+ C:\Users\ganjingshu\Desktop\frame1\Middlewares\Third_Party\FreeRTOS\Source\include/projdefs.h \
+ C:\Users\ganjingshu\Desktop\frame1\Middlewares\Third_Party\FreeRTOS\Source\include/portable.h \
+ C:\Users\ganjingshu\Desktop\frame1\Middlewares\Third_Party\FreeRTOS\Source\include/deprecated_definitions.h \
+ C:\Users\ganjingshu\Desktop\frame1\Middlewares\Third_Party\FreeRTOS\Source\portable\GCC\ARM_CM4F/portmacro.h \
+ C:\Users\ganjingshu\Desktop\frame1\Middlewares\Third_Party\FreeRTOS\Source\include/mpu_wrappers.h \
+ C:\Users\ganjingshu\Desktop\frame1\Middlewares\Third_Party\FreeRTOS\Source\include/task.h \
+ C:\Users\ganjingshu\Desktop\frame1\Middlewares\Third_Party\FreeRTOS\Source\include/list.h \
+ C:\Users\ganjingshu\Desktop\frame1\Middlewares\Third_Party\FreeRTOS\Source\include/stream_buffer.h

@@ -1,0 +1,21 @@
+CMakeFiles/basic_framework.elf.dir/Src/sysmem.c.obj: \
+ C:\Users\ganjingshu\Desktop\frame1\Src\sysmem.c \
+ D:/msys2/mingw64/arm-none-eabi/include/errno.h \
+ D:/msys2/mingw64/arm-none-eabi/include/sys/errno.h \
+ D:/msys2/mingw64/arm-none-eabi/include/sys/reent.h \
+ D:/msys2/mingw64/arm-none-eabi/include/_ansi.h \
+ D:/msys2/mingw64/arm-none-eabi/include/newlib.h \
+ D:/msys2/mingw64/arm-none-eabi/include/_newlib_version.h \
+ D:/msys2/mingw64/arm-none-eabi/include/sys/config.h \
+ D:/msys2/mingw64/arm-none-eabi/include/machine/ieeefp.h \
+ D:/msys2/mingw64/arm-none-eabi/include/sys/features.h \
+ D:/msys2/mingw64/lib/gcc/arm-none-eabi/13.3.0/include/stddef.h \
+ D:/msys2/mingw64/arm-none-eabi/include/sys/cdefs.h \
+ D:/msys2/mingw64/arm-none-eabi/include/machine/_default_types.h \
+ D:/msys2/mingw64/arm-none-eabi/include/sys/_types.h \
+ D:/msys2/mingw64/arm-none-eabi/include/machine/_types.h \
+ D:/msys2/mingw64/arm-none-eabi/include/sys/lock.h \
+ D:/msys2/mingw64/lib/gcc/arm-none-eabi/13.3.0/include/stdint.h \
+ D:/msys2/mingw64/arm-none-eabi/include/stdint.h \
+ D:/msys2/mingw64/arm-none-eabi/include/sys/_intsup.h \
+ D:/msys2/mingw64/arm-none-eabi/include/sys/_stdint.h

@@ -1,0 +1,20 @@
+CMakeFiles/basic_framework.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.obj: \
+ C:\Users\ganjingshu\Desktop\frame1\Middlewares\Third_Party\FreeRTOS\Source\croutine.c \
+ C:\Users\ganjingshu\Desktop\frame1\Middlewares\Third_Party\FreeRTOS\Source\include/FreeRTOS.h \
+ D:/msys2/mingw64/lib/gcc/arm-none-eabi/13.3.0/include/stddef.h \
+ D:/msys2/mingw64/lib/gcc/arm-none-eabi/13.3.0/include/stdint.h \
+ D:/msys2/mingw64/arm-none-eabi/include/stdint.h \
+ D:/msys2/mingw64/arm-none-eabi/include/machine/_default_types.h \
+ D:/msys2/mingw64/arm-none-eabi/include/sys/features.h \
+ D:/msys2/mingw64/arm-none-eabi/include/_newlib_version.h \
+ D:/msys2/mingw64/arm-none-eabi/include/sys/_intsup.h \
+ D:/msys2/mingw64/arm-none-eabi/include/sys/_stdint.h \
+ C:\Users\ganjingshu\Desktop\frame1\Inc/FreeRTOSConfig.h \
+ C:\Users\ganjingshu\Desktop\frame1\Middlewares\Third_Party\FreeRTOS\Source\include/projdefs.h \
+ C:\Users\ganjingshu\Desktop\frame1\Middlewares\Third_Party\FreeRTOS\Source\include/portable.h \
+ C:\Users\ganjingshu\Desktop\frame1\Middlewares\Third_Party\FreeRTOS\Source\include/deprecated_definitions.h \
+ C:\Users\ganjingshu\Desktop\frame1\Middlewares\Third_Party\FreeRTOS\Source\portable\GCC\ARM_CM4F/portmacro.h \
+ C:\Users\ganjingshu\Desktop\frame1\Middlewares\Third_Party\FreeRTOS\Source\include/mpu_wrappers.h \
+ C:\Users\ganjingshu\Desktop\frame1\Middlewares\Third_Party\FreeRTOS\Source\include/task.h \
+ C:\Users\ganjingshu\Desktop\frame1\Middlewares\Third_Party\FreeRTOS\Source\include/list.h \
+ C:\Users\ganjingshu\Desktop\frame1\Middlewares\Third_Party\FreeRTOS\Source\include/croutine.h
