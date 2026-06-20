@@ -172,7 +172,7 @@ static void RemoteControlSet()
     // 云台参数,确定云台控制数据
     if (switch_is_mid(rc_data[TEMP].rc.switch_left)) // 左侧开关状态为[中],视觉模式，目前给发射做调试使用.
     {
-        gimbal_cmd_send.gimbal_mode = GIMBAL_GYRO_MODE;
+        shoot_cmd_send.gimbal_mode = GIMBAL_GYRO_MODE;
         //al_cmd_send.pitch -= 0.002f * (float)rc_data[TEMP].rc.rocker_l1-pid_pitch_vision->Output;
         // gimbal_cmd_send.yaw -= vision_recv_data->yaw*RAD_2_DEGREE+0.001f * (float)rc_data[TEMP].rc.rocker_l_;
         // gimbal_cmd_send.pitch +=vision_recv_data->pitch*RAD_2_DEGREE;
@@ -202,39 +202,18 @@ static void RemoteControlSet()
     // 射击控制（调试与检录用）
     if(switch_is_mid(rc_data[TEMP].rc.switch_left) && switch_is_down(rc_data[TEMP].rc.switch_right))//左开关中，右开关下（摩擦轮关，拨弹关）
     {
-        shoot_cmd_send.friction_mode = FRICTION_OFF;
-        shoot_cmd_send.load_mode=LOAD_STOP;
+        shoot_cmd_send.friction_mode = FRICTION_UP;
+        shoot_cmd_send.shoot_mode = SHOOT_OFF;
     }
     else if(switch_is_mid(rc_data[TEMP].rc.switch_left) && switch_is_mid(rc_data[TEMP].rc.switch_right))//左开关中，右开关中（摩擦轮开，拨弹关）
     {
-        shoot_cmd_send.friction_mode = FRICTION_ON;
-        shoot_cmd_send.load_mode=LOAD_STOP;
+        shoot_cmd_send.friction_mode = FRICTION_DOWN;
         shoot_cmd_send.shoot_mode = SHOOT_ON;
     }
     else if(switch_is_mid(rc_data[TEMP].rc.switch_left) && switch_is_up(rc_data[TEMP].rc.switch_right))//左开关中，右开关上（摩擦轮开，拨弹开）
     {
-        shoot_cmd_send.friction_mode = FRICTION_ON;
-        shoot_cmd_send.load_mode=LOAD_BURSTFIRE;
-        //shoot_cmd_send.load_mode=LOAD_stovepipe;//卡弹反拨
-
-        // yaw_data=fabsf(gimbal_cmd_send.yaw - gimbal_fetch_data.gimbal_imu_data.Yaw);
-        // pitch_data=fabsf(gimbal_cmd_send.pitch - gimbal_fetch_data.gimbal_imu_data.Pitch);
-        // if( yaw_data < 0.8 &&  pitch_data < 0.8)    //当pitch和yaw角度都在0.8以下时,才开启发射
-        // {
-        //   if(loader_is_reversing==1 )
-        //   {
-        //   shoot_cmd_send.load_mode=LOAD_stovepipe;
-        //   }
-        //   else 
-        //   {
-        //   shoot_cmd_send.load_mode=LOAD_BURSTFIRE;
-        //   }
-        //}
-        // else
-        // {
-        //     shoot_cmd_send.load_mode=LOAD_STOP;
-        // }
-        shoot_cmd_send.shoot_mode = SHOOT_ON;
+        shoot_cmd_send.friction_mode = FRICTION_OFF;
+        shoot_cmd_send.shoot_mode = SHOOT_OFF;
     }
     
 

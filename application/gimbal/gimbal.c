@@ -174,19 +174,6 @@ void GimbalTask()
      speed1_data = yaw_motor->measure.speed_aps;
 
 
-    /* 视觉自瞄部分代码 */
-    //设置目标角度（输入）
-    //vision_gimbal_data.Vision_yaw_tar += yaw_motor->measure.total_angle + gimbal_cmd_recv.yaw*RAD_2_DEGREE*0.3 + gimbal_cmd_recv.yaw_vel*15*(-1);
-    // vision_yaw_tar = yaw_motor->measure.total_angle ;
-    // vision_pitch_tar = pitch_motor->measure.total_angle ;
-    // vision_yaw_tar += gimbal_cmd_recv.yaw*RAD_2_DEGREE;
-    // vision_pitch_tar +=gimbal_cmd_recv.pitch*RAD_2_DEGREE;
-    //pitch限位
-    //LIMIT_MIN_MAX(vision_pitch_tar, PITCH_LIMIT_MIN, PITCH_LIMIT_MAX);
-   
-     //DJIMotorSetRef(yaw_motor, gimbal_cmd_recv.yaw);
-    // DJIMotorSetRef(pitch_motor, vision_pitch_tar);
-
     vision_yaw_angle=yaw_motor->measure.angle_single_round;
     vision_pitch_angle=pitch_motor->measure.angle_single_round;
     
