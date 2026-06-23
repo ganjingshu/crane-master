@@ -75,6 +75,10 @@ static float chassis_power_max;//计算使用的最大功率值
 static float chassis_power_offset = -5; // 功率冗余，可修改
 static float output_zoom_coeff = 0;     // 输出缩放系数
 
+// 交叉耦合同步补偿器参数
+#define CHASSIS_SYNC_KP 0.3f       // 同步P增益，需根据实测调节，建议从0.1开始逐步增大
+#define CHASSIS_SYNC_MAX 500.0f    // 同步补偿最大输出限幅，单位与speed_aps一致(度/秒)
+
 //三个系数
 float toque_coefficient = 1.99688994e-6f; // (20/16384)*(0.3)*(187/3591)/9.55
 float k1 = 1.26e-07;                      // k1，9.50000043e-08
@@ -266,6 +270,30 @@ static void MecanumCalculate()
 
 
 /**
+ * @brief 交叉耦合同步补偿器
+ *        计算同侧前后电机的速度差，通过P增益将补偿量反补回目标速度，
+ *        使前后电机相互靠拢，提升同步性。
+ *        左侧(lf/lb)为X方向，右侧(rf/rb)为Y方向。
+ */
+static void ChassisSyncCompensate()
+{
+    // 左侧前后电机速度差 (lf - lb)，单位:度/秒
+    float sync_err_l = motor_lf->measure.speed_aps - motor_lb->measure.speed_aps;
+    // 右侧前后电机速度差 (rf - rb)，单位:度/秒
+    float sync_err_r = motor_rf->measure.speed_aps - motor_rb->measure.speed_aps;
+
+    // P增益补偿量，含限幅防止补偿过大
+    float compensate_l = abs_limit(sync_err_l * CHASSIS_SYNC_KP, CHASSIS_SYNC_MAX);
+    float compensate_r = abs_limit(sync_err_r * CHASSIS_SYNC_KP, CHASSIS_SYNC_MAX);
+
+    // 快的减速，慢的加速，相互靠拢
+    vt_lf -= compensate_l;
+    vt_lb += compensate_l;
+    vt_rf -= compensate_r;
+    vt_rb += compensate_r;
+}
+
+/**
  * @brief 对功率进行缩放，参考西交利物浦的方案（但目前并不是使用西交利物浦的方案进行功率限制）
  *
  */
@@ -408,6 +436,9 @@ void ChassisTask()
 
     // 根据控制模式进行正运动学解算,计算底盘输出
     MecanumCalculate();
+
+    // 交叉耦合同步补偿，减小前后电机速度差
+    ChassisSyncCompensate();
 
     // 设定底盘闭环参考值
     ChassisSetRef();
